@@ -1,0 +1,130 @@
+{
+  "common": {
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "welcome": "مرحباً",
+    "dashboard": "لوحة التحكم",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "switchPortal": "تبديل البوابة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "or": "أو"
+  },
+  "customer": {
+    "title": "بوابة العملاء",
+    "subtitle": "اعثر على منزلك المثالي",
+    "searchProperties": "البحث عن العقارات",
+    "viewListings": "عرض القوائم",
+    "myApplications": "طلباتي",
+    "savedProperties": "العقارات المحفوظة",
+    "upcomingViewings": "المعاينات القادمة",
+    "profileCompletion": "إكمال الملف الشخصي",
+    "tenantPortal": "بوابة المستأجر",
+    "leaseAgreement": "عقد الإيجار",
+    "paymentPortal": "بوابة الدفع",
+    "maintenanceRequests": "طلبات الصيانة",
+    "messageCenter": "مركز الرسائل",
+    "documentVault": "خزانة المستندات"
+  },
+  "admin": {
+    "title": "بوابة المدير",
+    "subtitle": "لوحة التحكم الإدارية",
+    "inProgress": "بوابة المدير قيد التطوير حالياً",
+    "comingSoon": "قريباً..."
+  },
+  "broker": {
+    "title": "بوابة الوسيط",
+    "subtitle": "مركز إدارة العقارات",
+    "inProgress": "بوابة الوسيط قيد التطوير حالياً",
+    "comingSoon": "قريباً..."
+  },
+  "landlord": {
+    "title": "بوابة المالك",
+    "subtitle": "لوحة تحكم مالك العقار",
+    "inProgress": "بوابة المالك قيد التطوير حالياً",
+    "comingSoon": "قريباً..."
+  },
+  "serviceVendor": {
+    "title": "بوابة مزود الخدمة",
+    "subtitle": "لوحة تحكم إدارة الخدمات"
+  },
+  "auth": {
+    "signUp": "إنشاء حساب",
+    "signIn": "تسجيل الدخول",
+    "signInWithGoogle": "تسجيل الدخول باستخدام جوجل",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "createAccount": "إنشاء حساب",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "acceptTerms": "أوافق على شروط الخدمة وسياسة الخصوصية"
+  },
+  "forms": {
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "عنوان البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "dateOfBirth": "تاريخ الميلاد",
+    "nationality": "الجنسية",
+    "occupation": "المهنة",
+    "monthlyIncome": "الدخل الشهري",
+    "emergencyContact": "جهة الاتصال الطارئة",
+    "required": "مطلوب",
+    "optional": "اختياري"
+  },
+  "property": {
+    "bedrooms": "غرف النوم",
+    "bathrooms": "الحمامات",
+    "area": "المساحة",
+    "price": "السعر",
+    "location": "الموقع",
+    "available": "متاح",
+    "notAvailable": "غير متاح",
+    "schedule": "جدولة",
+    "apply": "تقديم طلب",
+    "favorite": "مفضل",
+    "details": "التفاصيل",
+    "amenities": "المرافق",
+    "gallery": "المعرض"
+  },
+  "application": {
+    "submitted": "مقدم",
+    "underReview": "قيد المراجعة",
+    "approved": "موافق عليه",
+    "rejected": "مرفوض",
+    "trackApplication": "تتبع الطلب",
+    "applicationForm": "نموذج الطلب",
+    "personalInformation": "المعلومات الشخصية",
+    "documentation": "الوثائق"
+  },
+  "kyc": {
+    "kycRequired": "مطلوب التحقق من الهوية",
+    "kycRequiredMessage": "للتقديم على عقار، يجب عليك أولاً إكمال ملفك الشخصي والتحقق من هويتك (KYC). هذه خطوة مطلوبة لجميع طلبات الإيجار.",
+    "completeProfile": "إكمال الملف الشخصي",
+    "profileStatus": "حالة الملف الشخصي",
+    "profile": "الملف الشخصي",
+    "kyc": "التحقق من الهوية",
+    "verification": "التحقق",
+    "complete": "مكتمل",
+    "incomplete": "غير مكتمل",
+    "pending": "قيد الانتظار",
+    "getVerified": "تحقق الآن",
+    "continueOnboarding": "متابعة إكمال الملف",
+    "onboardingMessage": "أكمل ملفك الشخصي لفتح جميع الميزات مثل التقديم على العقارات وجدولة المعاينات."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "common": {
+    "login": "Login",
+    "logout": "Logout",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "welcome": "Welcome",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "switchPortal": "Switch Portal",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "or": "or"
+  },
+  "customer": {
+    "title": "Customer Portal",
+    "subtitle": "Find your perfect home",
+    "searchProperties": "Search Properties",
+    "viewListings": "View Listings",
+    "myApplications": "My Applications",
+    "savedProperties": "Saved Properties",
+    "upcomingViewings": "Upcoming Viewings",
+    "profileCompletion": "Profile Completion",
+    "tenantPortal": "Tenant Portal",
+    "leaseAgreement": "Lease Agreement",
+    "paymentPortal": "Payment Portal",
+    "maintenanceRequests": "Maintenance Requests",
+    "messageCenter": "Message Center",
+    "documentVault": "Document Vault"
+  },
+  "admin": {
+    "title": "Admin Portal",
+    "subtitle": "Administrative Control Panel",
+    "inProgress": "Admin Portal is currently under development",
+    "comingSoon": "Coming Soon..."
+  },
+  "broker": {
+    "title": "Broker Portal",
+    "subtitle": "Property Management Hub",
+    "inProgress": "Broker Portal is currently under development",
+    "comingSoon": "Coming Soon..."
+  },
+  "landlord": {
+    "title": "Landlord Portal",
+    "subtitle": "Property Owner Dashboard",
+    "inProgress": "Landlord Portal is currently under development",
+    "comingSoon": "Coming Soon..."
+  },
+  "serviceVendor": {
+    "title": "Service Vendor Portal",
+    "subtitle": "Service Management Dashboard"
+  },
+  "auth": {
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "signInWithGoogle": "Sign in with Google",
+    "forgotPassword": "Forgot Password?",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "acceptTerms": "I agree to the Terms of Service and Privacy Policy"
+  },
+  "forms": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "dateOfBirth": "Date of Birth",
+    "nationality": "Nationality",
+    "occupation": "Occupation",
+    "monthlyIncome": "Monthly Income",
+    "emergencyContact": "Emergency Contact",
+    "required": "Required",
+    "optional": "Optional"
+  },
+  "property": {
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "area": "Area",
+    "price": "Price",
+    "location": "Location",
+    "available": "Available",
+    "notAvailable": "Not Available",
+    "schedule": "Schedule",
+    "apply": "Apply",
+    "favorite": "Favorite",
+    "details": "Details",
+    "amenities": "Amenities",
+    "gallery": "Gallery"
+  },
+  "application": {
+    "submitted": "Submitted",
+    "underReview": "Under Review",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "trackApplication": "Track Application",
+    "applicationForm": "Application Form",
+    "personalInformation": "Personal Information",
+    "documentation": "Documentation"
+  },
+  "kyc": {
+    "kycRequired": "KYC Verification Required",
+    "kycRequiredMessage": "To apply for a property, you must first complete your profile and KYC verification. This is a required step for all rental applications.",
+    "completeProfile": "Complete Profile",
+    "profileStatus": "Profile Status",
+    "profile": "Profile",
+    "kyc": "KYC",
+    "verification": "Verification",
+    "complete": "Complete",
+    "incomplete": "Incomplete",
+    "pending": "Pending",
+    "getVerified": "Get Verified",
+    "continueOnboarding": "Continue Onboarding",
+    "onboardingMessage": "Complete your profile to unlock all features like applying for properties and scheduling viewings."
+  }
+}
