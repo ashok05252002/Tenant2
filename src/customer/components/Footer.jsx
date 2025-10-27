@@ -38,9 +38,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
-              <div className="bg-black rounded-md p-1">
+              <div className="rounded-md p-1">
                 <img 
-                  src="https://i.postimg.cc/L6wM906B/adb-logo.png" 
+                  src="/images/propx1.png" 
                   alt="Al Dahab Investments Group Logo" 
                   className="h-12"
                 />

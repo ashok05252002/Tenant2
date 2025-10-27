@@ -20,11 +20,11 @@ const VendorSidebar = ({ isCollapsed }) => {
         <aside className={`fixed top-0 left-0 h-full bg-orange-800 text-orange-200 flex flex-col z-50 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
             <div className="flex items-center justify-center h-20 border-b border-orange-700">
                 <Link to="/service-vendor">
-                    <div className="bg-black rounded-md p-1">
+                    <div className="rounded-md p-1">
                         <img 
-                            src="https://i.postimg.cc/L6wM906B/adb-logo.png" 
+                            src="/images/propx1.png" 
                             alt="Al Dahab Investments Group Logo" 
-                            className="h-10"
+                            className="h-36"
                         />
                     </div>
                 </Link>

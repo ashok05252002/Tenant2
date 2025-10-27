@@ -7,9 +7,9 @@ const MobileHeader = () => {
         <header className="bg-cream-100/80 backdrop-blur-md border-b border-cream-200 sticky top-0 z-40 px-4 py-3">
             <div className="flex justify-between items-center">
                 <Link to="/mobile" className="flex items-center">
-                    <div className="bg-black rounded-md p-1">
+                    <div className="rounded-md p-1">
                         <img 
-                            src="https://i.postimg.cc/L6wM906B/adb-logo.png" 
+                            src="/images/propx1.png" 
                             alt="Al Dahab Investments Group Logo" 
                             className="h-8"
                         />
