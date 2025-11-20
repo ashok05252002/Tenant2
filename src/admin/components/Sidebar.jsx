@@ -138,15 +138,15 @@ const navConfig = [
 
 const Sidebar = ({ isCollapsed }) => {
     return (
-        <aside className={`fixed top-0 left-0 h-full bg-secondary-900 text-secondary-300 flex flex-col z-50 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
+        <aside className={`fixed top-0 left-0 h-full bg-primary-800 text-primary-200 flex flex-col z-50 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
             {/* Logo */}
-            <div className="flex items-center justify-center h-20 border-b border-secondary-800">
+            <div className="flex items-center justify-center h-20 border-b border-primary-700">
                 <Link to="/admin/dashboard">
-                    <div className="rounded-md p-1">
+                    <div>
                         <img 
-                            src="/images/propx1.png" 
-                            alt="Al Dahab Investments Group Logo" 
-                            className="h-0"
+                            src="https://i.ibb.co/GkLzS4q/prop-logo.png" 
+                            alt="PROPX Logo" 
+                            className="h-10"
                         />
                     </div>
                 </Link>
@@ -155,24 +155,24 @@ const Sidebar = ({ isCollapsed }) => {
             {/* Navigation */}
             <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
                 {navConfig.map((item) => (
-                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} />
+                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} activeColor="bg-accent-500 text-white" parentActiveColor="text-white" />
                 ))}
             </nav>
 
             {/* User Profile */}
-            <div className="px-4 py-6 border-t border-secondary-800">
+            <div className="px-4 py-6 border-t border-primary-700">
                 <div className={`flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
                     <div className={`flex items-center ${isCollapsed ? 'flex-col' : ''}`}>
-                         <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://randomuser.me/api/portraits/men/75.jpg" alt="Admin" className="w-10 h-10 rounded-full" />
+                         <img src="https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://img-wrapper.vercel.app/image?url=https://randomuser.me/api/portraits/men/75.jpg" alt="Admin" className="w-10 h-10 rounded-full" />
                         {!isCollapsed && (
                             <div className="ml-3">
                                 <p className="font-semibold text-white text-sm">Admin User</p>
-                                <p className="text-xs text-secondary-400">Super Admin</p>
+                                <p className="text-xs text-primary-300">Super Admin</p>
                             </div>
                         )}
                     </div>
                     {!isCollapsed && (
-                        <button title="Logout" className="p-2 rounded-lg hover:bg-secondary-800">
+                        <button title="Logout" className="p-2 rounded-lg hover:bg-primary-700">
                             <LogOut size={18} />
                         </button>
                     )}

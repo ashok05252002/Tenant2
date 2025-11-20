@@ -47,8 +47,8 @@ const PropertyCard = ({ property, viewMode = 'grid', onScheduleClick }) => {
   };
 
   const cardClasses = viewMode === 'grid'
-    ? "bg-cream-100 rounded-xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
-    : "bg-cream-100 rounded-xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-lg transition-shadow flex flex-col md:flex-row";
+    ? "bg-white rounded-xl shadow-sm border border-secondary-200 overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
+    : "bg-white rounded-xl shadow-sm border border-secondary-200 overflow-hidden hover:shadow-lg transition-shadow flex flex-col md:flex-row";
 
   const imageContainerClasses = viewMode === 'grid'
     ? "relative group"
@@ -101,7 +101,7 @@ const PropertyCard = ({ property, viewMode = 'grid', onScheduleClick }) => {
         <div className="absolute top-3 right-3">
           <button
             onClick={handleFavoriteClick}
-            className="w-8 h-8 bg-cream-100 rounded-full flex items-center justify-center shadow-sm hover:bg-cream-200 transition-colors"
+            className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-secondary-100 transition-colors"
           >
             <Heart size={16} className={`transition-colors ${isLiked ? 'text-red-500 fill-current' : 'text-secondary-400'}`} />
           </button>
@@ -139,36 +139,36 @@ const PropertyCard = ({ property, viewMode = 'grid', onScheduleClick }) => {
 
         <div className="flex-grow"></div>
 
-        <div className="mt-auto pt-4 border-t border-cream-200">
+        <div className="mt-auto pt-4 border-t border-secondary-200">
             <div className="flex items-stretch justify-between gap-4">
                 {/* Left: Price */}
-                <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg bg-cream-200/50 pr-4 border-r border-cream-200">
+                <div className="flex flex-col justify-center items-center text-center p-2 rounded-lg bg-secondary-100 pr-4 border-r border-secondary-200">
                     <span className="text-secondary-500 text-xs">Price</span>
-                    <span className="text-2xl font-bold text-primary-700 leading-tight">{property.price}</span>
+                    <span className="text-2xl font-bold text-accent-600 leading-tight">{property.price}</span>
                     <span className="text-secondary-500 text-xs">OMR/month</span>
                 </div>
                 
                 {/* Right: Actions */}
                 <div className="flex-1 flex flex-col justify-center gap-2">
-                    {/* Top row: Schedule and Apply */}
+                    {/* Top row: Contact Icons */}
+                    <div className="flex items-center justify-end gap-2">
+                        <a href={`tel:${property.landlord.phone}`} onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-accent-600 rounded-full hover:bg-secondary-100 transition-colors" title="Call"><Phone size={18} /></a>
+                        <a href={`mailto:${property.landlord.email}`} onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-accent-600 rounded-full hover:bg-secondary-100 transition-colors" title="Email"><Mail size={18} /></a>
+                        <a href={`https://wa.me/${property.landlord.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-accent-600 rounded-full hover:bg-secondary-100 transition-colors" title="WhatsApp"><WhatsAppIcon size={18} /></a>
+                    </div>
+                    {/* Bottom row: Schedule and Apply */}
                     {property.available && (
                         <div className="flex items-center justify-end gap-2">
-                            <button onClick={handleApply} className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors text-sm font-medium" title="Apply Now">
-                                <FileText size={16} />
-                                <span>Apply</span>
-                            </button>
                             <button onClick={handleSchedule} className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 bg-secondary-200 text-secondary-800 rounded-lg hover:bg-secondary-300 transition-colors text-sm font-medium" title="Schedule Viewing">
                                 <Calendar size={16} />
                                 <span>Schedule</span>
                             </button>
+                            <button onClick={handleApply} className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 bg-accent-500 text-white rounded-lg hover:bg-accent-600 transition-colors text-sm font-medium" title="Apply Now">
+                                <FileText size={16} />
+                                <span>Apply</span>
+                            </button>
                         </div>
                     )}
-                    {/* Bottom row: Contact Icons */}
-                    <div className="flex items-center justify-end gap-2">
-                        <a href={`tel:${property.landlord.phone}`} onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-primary-700 rounded-full hover:bg-cream-200 transition-colors" title="Call"><Phone size={18} /></a>
-                        <a href={`mailto:${property.landlord.email}`} onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-primary-700 rounded-full hover:bg-cream-200 transition-colors" title="Email"><Mail size={18} /></a>
-                        <a href={`https://wa.me/${property.landlord.phone.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 text-secondary-600 hover:text-primary-700 rounded-full hover:bg-cream-200 transition-colors" title="WhatsApp"><WhatsAppIcon size={18} /></a>
-                    </div>
                 </div>
             </div>
         </div>

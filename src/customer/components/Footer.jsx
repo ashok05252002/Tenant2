@@ -38,10 +38,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
-              <div className="rounded-md p-1">
+              <div>
                 <img 
-                  src="/images/propx1.png" 
-                  alt="Al Dahab Investments Group Logo" 
+                  src="https://i.sstatic.net/xcxEQ.png" 
+                  alt="PROPX Logo" 
                   className="h-12"
                 />
               </div>
@@ -113,7 +113,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-secondary-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Al Dahab Investments Group. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PROPX. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

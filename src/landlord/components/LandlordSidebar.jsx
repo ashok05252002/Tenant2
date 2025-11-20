@@ -27,18 +27,18 @@ const LandlordSidebar = ({ isCollapsed }) => {
         <aside className={`fixed top-0 left-0 h-full bg-white text-secondary-700 flex flex-col z-50 transition-all duration-300 border-r border-secondary-200 ${isCollapsed ? 'w-20' : 'w-64'}`}>
             <div className="flex items-center justify-center h-20 border-b border-secondary-200">
                 <Link to="/landlord/dashboard">
-                    <div className="rounded-md p-1">
+                    <div>
                         <img 
-                            src="/images/propx1.png" 
-                            alt="Al Dahab Investments Group Logo" 
-                            className="h-36"
+                            src="https://i.ibb.co/GkLzS4q/prop-logo.png" 
+                            alt="PROPX Logo" 
+                            className="h-10"
                         />
                     </div>
                 </Link>
             </div>
             <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
                 {navConfig.map((item) => (
-                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} activeColor="bg-purple-100 text-purple-800" parentActiveColor="text-purple-800" />
+                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} activeColor="bg-accent-100 text-accent-800" parentActiveColor="text-accent-800" />
                 ))}
             </nav>
             <div className="px-4 py-6 border-t border-secondary-200">

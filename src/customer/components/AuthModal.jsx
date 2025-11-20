@@ -33,11 +33,11 @@ const AuthModal = () => {
           </button>
           
           <div className="w-full">
-            <div className="rounded-md p-1 w-max mb-8">
+            <div className="w-max mb-8">
               <img 
-                src="/images/propx1.png" 
-                alt="Al Dahab Investments Group Logo" 
-                className="h-36"
+                src="https://i.sstatic.net/xcxEQ.png" 
+                alt="PROPX Logo" 
+                className="h-10"
               />
             </div>
           

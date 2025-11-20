@@ -30,16 +30,16 @@ const TopBar = () => {
   }, []);
 
   return (
-    <header className="bg-cream-100/80 backdrop-blur-md border-b border-cream-200 sticky top-0 z-40">
+    <header className="bg-white/80 backdrop-blur-md border-b border-secondary-200 sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Title */}
           <Link to="/" className="flex items-center">
-            <div className="rounded-md p-1">
+            <div>
               <img 
-                src="/images/propx1.png" 
-                alt="Al Dahab Investments Group Logo" 
-                className="h-36"
+                src="https://i.ibb.co/GkLzS4q/prop-logo.png" 
+                alt="PROPX Logo" 
+                className="h-10"
               />
             </div>
           </Link>
@@ -47,11 +47,11 @@ const TopBar = () => {
           {/* Navigation and Controls */}
           <div className="flex items-center gap-4">
             <nav className="hidden md:flex items-center gap-6">
-              <Link to="/search?type=rent" className="text-sm font-medium text-secondary-700 hover:text-primary-700">Rent</Link>
-              <Link to="/search?type=buy" className="text-sm font-medium text-secondary-700 hover:text-primary-700">Buy</Link>
-              <Link to="/about" className="text-sm font-medium text-secondary-700 hover:text-primary-700">About Us</Link>
-              <Link to="/contact" className="text-sm font-medium text-secondary-700 hover:text-primary-700">Contact</Link>
-              <Link to="/list-with-us" className="text-sm font-medium text-secondary-700 hover:text-primary-700 flex items-center gap-1">
+              <Link to="/search?type=rent" className="text-sm font-medium text-secondary-700 hover:text-accent-600">Rent</Link>
+              <Link to="/search?type=buy" className="text-sm font-medium text-secondary-700 hover:text-accent-600">Buy</Link>
+              <Link to="/about" className="text-sm font-medium text-secondary-700 hover:text-accent-600">About Us</Link>
+              <Link to="/contact" className="text-sm font-medium text-secondary-700 hover:text-accent-600">Contact</Link>
+              <Link to="/list-with-us" className="text-sm font-medium text-secondary-700 hover:text-accent-600 flex items-center gap-1">
                 <Building size={14} /> List With Us
               </Link>
             </nav>
@@ -67,21 +67,21 @@ const TopBar = () => {
                 <div className="relative" ref={dropdownRef}>
                   <button 
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-secondary-700 hover:text-primary-700"
+                    className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-secondary-700 hover:text-accent-600"
                   >
                     <User size={16} />
                     <span className="hidden sm:inline">{user.name}</span>
                     <ChevronDown size={16} className={`transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
                   </button>
                   {isDropdownOpen && (
-                    <div className="absolute right-0 mt-2 w-56 bg-cream-100 rounded-md shadow-lg py-1 border border-cream-200">
-                      <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm text-secondary-700 hover:bg-cream-200">
+                    <div className="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 border border-secondary-200">
+                      <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm text-secondary-700 hover:bg-secondary-100">
                         <Settings size={16} /> {t('common.profile')}
                       </Link>
-                       <Link to="/tenant-portal" className="flex items-center gap-3 px-4 py-2 text-sm text-secondary-700 hover:bg-cream-200">
+                       <Link to="/tenant-portal" className="flex items-center gap-3 px-4 py-2 text-sm text-secondary-700 hover:bg-secondary-100">
                         <Key size={16} /> My Property
                       </Link>
-                      <button onClick={handleLogout} className="w-full text-left flex items-center gap-3 px-4 py-2 text-sm text-red-600 hover:bg-cream-200">
+                      <button onClick={handleLogout} className="w-full text-left flex items-center gap-3 px-4 py-2 text-sm text-red-600 hover:bg-red-100">
                         <LogOut size={16} /> {t('common.logout')}
                       </button>
                     </div>
@@ -90,7 +90,7 @@ const TopBar = () => {
               ) : (
                 <button 
                   onClick={() => setAuthModalOpen(true)}
-                  className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-secondary-700 hover:text-primary-700"
+                  className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-secondary-700 hover:text-accent-600"
                 >
                   <User size={16} />
                   <span className="hidden sm:inline">{t('common.login')}</span>

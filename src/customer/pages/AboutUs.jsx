@@ -10,7 +10,7 @@ const AboutUs = () => {
                 <div className="relative bg-primary-800 text-white text-center py-20">
                     <div className="absolute inset-0 bg-black/30"></div>
                     <div className="relative z-10">
-                        <h1 className="text-4xl font-bold">About Oman Rentals</h1>
+                        <h1 className="text-4xl font-bold">About Us</h1>
                         <p className="text-lg mt-2 max-w-2xl mx-auto">Simplifying the rental experience in Oman with technology and trust.</p>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ const AboutUs = () => {
                         <div>
                             <h2 className="text-3xl font-bold text-secondary-900 mb-4">Our Story</h2>
                             <p className="text-secondary-600 leading-relaxed mb-4">
-                                Founded in 2024, Oman Rentals was born from a simple idea: to make finding and renting a home in Oman as seamless and transparent as possible. We saw the challenges faced by both tenants and landlords and decided to build a platform that bridges the gap with modern technology and a user-centric approach.
+                                Founded in 2024, PROPX was born from a simple idea: to make finding and renting a home in Oman as seamless and transparent as possible. We saw the challenges faced by both tenants and landlords and decided to build a platform that bridges the gap with modern technology and a user-centric approach.
                             </p>
                             <p className="text-secondary-600 leading-relaxed">
                                 From browsing verified listings to secure digital payments and maintenance requests, our goal is to support you at every step of your rental journey.

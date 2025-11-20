@@ -17,24 +17,24 @@ const navConfig = [
 const VendorSidebar = ({ isCollapsed }) => {
     const { user } = useServiceVendor();
     return (
-        <aside className={`fixed top-0 left-0 h-full bg-orange-800 text-orange-200 flex flex-col z-50 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
-            <div className="flex items-center justify-center h-20 border-b border-orange-700">
+        <aside className={`fixed top-0 left-0 h-full bg-white text-secondary-700 flex flex-col z-50 transition-all duration-300 border-r border-secondary-200 ${isCollapsed ? 'w-20' : 'w-64'}`}>
+            <div className="flex items-center justify-center h-20 border-b border-secondary-200">
                 <Link to="/service-vendor">
-                    <div className="rounded-md p-1">
+                    <div>
                         <img 
-                            src="/images/propx1.png" 
-                            alt="Al Dahab Investments Group Logo" 
-                            className="h-36"
+                            src="https://i.ibb.co/GkLzS4q/prop-logo.png" 
+                            alt="PROPX Logo" 
+                            className="h-10"
                         />
                     </div>
                 </Link>
             </div>
             <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
                 {navConfig.map((item) => (
-                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} />
+                    <SidebarItem key={item.title} item={item} isCollapsed={isCollapsed} activeColor="bg-accent-100 text-accent-800" parentActiveColor="text-accent-800" />
                 ))}
             </nav>
-            <div className="px-4 py-6 border-t border-orange-700">
+            <div className="px-4 py-6 border-t border-secondary-200">
                  <Link to="/service-vendor/profile" className={`flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
                     <div className={`flex items-center ${isCollapsed ? 'flex-col' : ''}`}>
                          <img src={user.avatar} alt="Vendor" className="w-10 h-10 rounded-full" />

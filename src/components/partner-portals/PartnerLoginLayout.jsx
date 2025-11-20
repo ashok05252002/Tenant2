@@ -8,10 +8,10 @@ const PartnerLoginLayout = ({ children }) => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         <Link to="/" className="flex items-center">
-                            <div className="rounded-md p-1">
+                            <div>
                                 <img 
-                                    src="/images/propx1.png" 
-                                    alt="Al Dahab Investments Group Logo" 
+                                    src="https://i.sstatic.net/xcxEQ.png" 
+                                    alt="PROPX Logo" 
                                     className="h-8"
                                 />
                             </div>
